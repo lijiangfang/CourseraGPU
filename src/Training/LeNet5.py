@@ -6,6 +6,9 @@ import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
 import numpy as np
 
+data_path = '../../data'  
+model_path = '../../model'
+
 # 1. Define LeNet-5 Architecture 
 class LeNet5(nn.Module):
     def __init__(self):
@@ -43,7 +46,7 @@ transform = transforms.Compose([
     lambda x: x.transpose(1, 2) 
 ])
 
-train_set = torchvision.datasets.EMNIST(root='../data', split='byclass', train=True, download=True, transform=transform)
+train_set = torchvision.datasets.EMNIST(root=data_path, split='byclass', train=True, download=True, transform=transform)
 train_loader = DataLoader(train_set, batch_size=128, shuffle=True)
 
 # 3. Training Loop (Run for 5-10 epochs)
@@ -74,7 +77,7 @@ model.eval()
 def save_bin(tensor, name):
     # Ensure float32 for C++ compatibility
     arr = tensor.detach().cpu().numpy().astype(np.float32)
-    arr.tofile(f"{name}.bin")
+    arr.tofile(model_path + f"{name}.bin")
     print(f"Saved {name}.bin | Shape: {arr.shape}")
 
 save_bin(model.conv1.weight, "conv1_w")
