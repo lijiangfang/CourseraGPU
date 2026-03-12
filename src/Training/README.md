@@ -1,9 +1,12 @@
-This directory contains the python code to train the model. 
+This directory contains the Python code used to train the model.
 
-Modify these variables as needed:
-* data_path: where to store the training data  
-* model_path: where to write the model parameters when training is done
-* TOTAL_EPOCHS: how many epochs to train
+Modify the following variables as needed:
 
-To run the training loop, type below in command line:
-python LeNet5.py
+- `data_path`: where the training data is stored
+- `model_path`: where the model parameters will be written after training
+- `TOTAL_EPOCHS`: the number of epochs to train
+
+To run the training loop, type the following command in the command line:
+
+```bash
+python3 LeNet5.py

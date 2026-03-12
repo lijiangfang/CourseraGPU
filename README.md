@@ -1,8 +1,8 @@
-This is the capstone project for Coursera's JHU GPU Programming course series.
+This is the capstone project for Johns Hopkins University’s GPU Programming course series on Coursera.
 
 LeNet-5 is one of the earliest and most influential convolutional neural networks (CNNs). It was developed in 1998 by Yann LeCun and colleagues at Bell Labs.
 
-In this project, I trained a LeNet-5 like model to recognize images of 0...9, A...Z, and a...z. The model was trauined with PyTorch and the Inferencing was implemented by using various CUDA libraries (e.g. NPPI, cuDNN and cuBLAS) as well own CUDA kernels.
+In this project, I trained a LeNet-5–like model to recognize images of 0–9, A–Z, and a–z. The model was trained using PyTorch, and inference was implemented using several Nvidia CUDA libraries (e.g., NPP, cuDNN, and cuBLAS), as well as custom CUDA kernels.
 
 # Model Architecture
 This is a modernized LeNet-5 architecture adapted for 62-class classification (digits + uppercase + lowercase letters).
@@ -44,12 +44,12 @@ Used Microsoft copilot to help generate the .jpeg files to test the model infere
 ## model
 The model weights and the standard output from model training are stored in the following subdirectories.
 
-*model1: trained for 1 epoch. For example, conv1_w.bin contains the weights for the first convolution layer, and conv1_b.bin contains the bias values. training1.txt is the standard output generated when the model was trained.
-*model5: trained with 5 epochs
-*model16: traind with 16 epochs
-*model32: trained with 32 epoches
+* model1: trained for 1 epoch. For example, conv1_w.bin contains the weights for the first convolution layer, and conv1_b.bin contains the bias values. training1.txt is the standard output generated when the model was trained.
+* model5: trained with 5 epochs
+* model16: traind with 16 epochs
+* model32: trained with 32 epoches
 
-##src
+## src
 * Training: the python code to train the model. 
 * Inference: the C++ code to run inferencing on the model.
 
@@ -58,7 +58,7 @@ All models were evaluated on two datasets (test1 and test2). A more comprehensiv
 
 With only a single character and without any additional context, it is difficult to distinguish among O, o, and 0. Therefore, the evaluation includes two modes: strict and relaxed. In relaxed mode, a prediction is considered correct if it predicts O while the label is o. Under inputs/test1, you can find the evaluation outputs for each model and each mode. For example, results1.txt is the evaluation of model1 in strict mode, and results1-relaxed.txt is the evaluation of model1 in relaxed mode.
 
-Below is the accuracy trend with respect to model training epochs. You can see that the model performance saturates at around 5 epochs. There is little difference among 5 epochs, 16 epochs, and 32 epochs.
+Below is the accuracy trend with respect to model training epochs. You can see that the model performance saturates at around 16 epochs. There is little difference among 5 epochs, 16 epochs, and 32 epochs.
 
 ![Accuracy vs Epochs](accuracy_trend_labeled.jpeg)
 

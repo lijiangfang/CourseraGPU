@@ -1,30 +1,36 @@
-This directory contains the C++ code to run evaluation on the model we trained.
+This directory contains the C++ code used to run evaluation on the trained model.
 
-# Files
-*lenet5.h: the header file for LeNet5 class
-*lenet5.cpp: the C++ implementation for LetNet5 class. The code loads the model weights in setup method. The forward method does the batch inferencing. It builds on cuDNN and cuBLAS as well as own CUDA kernel.
-*bias_relu_kernel.h: header file for CUDA kernels.
-*bias_relu_kernel.cu: CUDA kernel implementations.
-*imgPP.h: header file for image pre-processing before the images are passed to LeNet5 for evaluation.
-*imgPP.cpp: reads .jpeg/.jpg files and preprecesses the images. It builds on CUDA NPPI library.
-*ocr.cpp: handles the command line options, calls image preprocessing, and then calls LeNet5 forward. After that, processes the output from LeNet5 and print the result to standard output.
-*cucheck.h: some macroes for CUDA, cuDNN, and cuBLAS error code check.
+### Files
 
-# build
-type make in a command line
+- `lenet5.h`: Header file for the `LeNet5` class.  
+- `lenet5.cpp`: C++ implementation of the `LeNet5` class. The code loads the model weights in the `setup` method. The `forward` method performs batch inference. It uses **cuDNN** and **cuBLAS**, as well as custom CUDA kernels.  
+- `bias_relu_kernel.h`: Header file for CUDA kernels.  
+- `bias_relu_kernel.cu`: CUDA kernel implementations.  
+- `imgPP.h`: Header file for image pre-processing before passing images to `LeNet5` for evaluation.  
+- `imgPP.cpp`: Reads `.jpeg` / `.jpg` files and preprocesses the images. It uses the **CUDA NPP** library.  
+- `ocr.cpp`: Handles command-line options, calls image preprocessing, then calls `LeNet5::forward`. Processes the output from `LeNet5` and prints the results to standard output.  
+- `cucheck.h`: Macros for checking CUDA, cuDNN, and cuBLAS error codes.
 
-# run
-type following in command line:
-/ocr.exe [-relaxed] [-inputD <input_directory>] [-modelD <model_directory>] [-batchSize <batch_size>] [-files file1.jpg,file2.jpg,...]
+---
 
-Example: ./ocr -inputD ./input -modelD ./model -max_batch 5
+### Build
 
-Example with specific files: ./ocr -inputD ./input -modelD ./model -max_batch 5 -files img1.jpg,img2.jpg
+Type the following command in a terminal:
 
-default input directory ../../inputs/, default model path: ../../model/. no specifying files means all .jpeg/.jpg files under inputs directory.
+```bash
+make
 
--relaxed: when this option is selected, the prediction correctness is evalued more relaxed. e.g. O, o, and 0 are considered the same
+### run
 
-default batch size is 5.
+Type the following command in a terminal:
 
+```bash
+./ocr.exe [-relaxed] [-inputD <input_directory>] [-modelD <model_directory>] [-batchSize <batch_size>] [-files file1.jpg,file2.jpg,...]
 
+#### Defaults
+
+- **Input directory:** `../../inputs/`  
+- **Model directory:** `../../model/`  
+- **Files:** if not specified, all `.jpeg` / `.jpg` files in the input directory are used  
+- **Batch size:** 5  
+- **-relaxed:** when selected, prediction correctness is evaluated more leniently (e.g., `O`, `o`, and `0` are considered equivalent)
