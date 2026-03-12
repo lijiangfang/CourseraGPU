@@ -21,7 +21,7 @@ Input (28×28×1) → Conv1 → ReLU → Pool1 → Conv2 → ReLU → Pool2 → 
 * Padding=2 preserves spatial dimensions  
 
 ### Conv2 Block:  Conv 5x5, 6 input, 16 output
-* Conv2d(6, 16, kernel_size=5) →  
+* Conv2d(6, 16, kernel_size=5) 
 * ReLU() activation
 * MaxPool2d(2, 2) → 5×5×16
 
