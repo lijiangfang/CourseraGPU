@@ -1,0 +1,19 @@
+Training on cpu...
+Epoch [1/1], Step [0], Loss: 4.1370
+Epoch [1/1], Step [1000], Loss: 0.6536
+Epoch [1/1], Step [2000], Loss: 0.3933
+Epoch [1/1], Step [3000], Loss: 0.4194
+Epoch [1/1], Step [4000], Loss: 0.3944
+Epoch [1/1], Step [5000], Loss: 0.3303
+Exporting weights to .bin files...
+Saved conv1_w.bin | Shape: (6, 1, 5, 5), first three floats: [ 0.08681031 -0.06695094  0.13497569]
+Saved conv1_b.bin | Shape: (6,), first three floats: [-0.0676425   0.31879607  0.11094394]
+Saved conv2_w.bin | Shape: (16, 6, 5, 5), first three floats: [-0.0729242   0.03528029  0.05198869]
+Saved conv2_b.bin | Shape: (16,), first three floats: [-0.11702166 -0.06005095  0.02516171]
+Saved fc1_w.bin | Shape: (120, 400), first three floats: [ 0.01259207  0.00275135 -0.01234095]
+Saved fc1_b.bin | Shape: (120,), first three floats: [-0.00619758  0.05453433 -0.01401611]
+Saved fc2_w.bin | Shape: (84, 120), first three floats: [-0.01721824 -0.22413072  0.12100714]
+Saved fc2_b.bin | Shape: (84,), first three floats: [ 0.02810857  0.09231465 -0.09418338]
+Saved fc3_w.bin | Shape: (62, 84), first three floats: [ 0.13192303 -0.00303094  0.04367474]
+Saved fc3_b.bin | Shape: (62,), first three floats: [ 0.01439217 -0.10730051  0.04976704]
+All weights exported. 

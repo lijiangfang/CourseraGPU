@@ -7,7 +7,8 @@ from torch.utils.data import DataLoader
 import numpy as np
 
 data_path = '../../data'  
-model_path = '../../model'
+model_path = '../../model/'
+TOTAL_EPOCHS = 5
 
 # 1. Define LeNet-5 Architecture 
 class LeNet5(nn.Module):
@@ -43,7 +44,9 @@ class LeNet5(nn.Module):
 transform = transforms.Compose([
     transforms.ToTensor(),
     # EMNIST is transposed by default; this flip/rotate fix is helpful for C++ alignment
-    lambda x: x.transpose(1, 2) 
+    lambda x: x.transpose(1, 2),
+    # Standardize using EMNIST ByClass mean/std (calculated from the dataset)
+    transforms.Normalize((0.1736,), (0.3317,)) 
 ])
 
 train_set = torchvision.datasets.EMNIST(root=data_path, split='byclass', train=True, download=True, transform=transform)
@@ -57,7 +60,7 @@ optimizer = optim.Adam(model.parameters(), lr=0.001)
 
 print(f"Training on {device}...")
 model.train()
-for epoch in range(5): # 5 epochs is enough for a baseline
+for epoch in range(TOTAL_EPOCHS): # 5 epochs is enough for a baseline
     for i, (images, labels) in enumerate(train_loader):
         images, labels = images.to(device), labels.to(device)
         
@@ -68,7 +71,7 @@ for epoch in range(5): # 5 epochs is enough for a baseline
         optimizer.step()
         
         if i % 1000 == 0:
-            print(f"Epoch [{epoch+1}/5], Step [{i}], Loss: {loss.item():.4f}")
+            print(f"Epoch [{epoch+1}/{TOTAL_EPOCHS}], Step [{i}], Loss: {loss.item():.4f}")
 
 # 4. Export to Binary for C++ / CUDA
 print("Exporting weights to .bin files...")
@@ -78,7 +81,7 @@ def save_bin(tensor, name):
     # Ensure float32 for C++ compatibility
     arr = tensor.detach().cpu().numpy().astype(np.float32)
     arr.tofile(model_path + f"{name}.bin")
-    print(f"Saved {name}.bin | Shape: {arr.shape}")
+    print(f"Saved {name}.bin | Shape: {arr.shape}, first three floats: {arr.flatten()[:3]}")
 
 save_bin(model.conv1.weight, "conv1_w")
 save_bin(model.conv1.bias, "conv1_b")

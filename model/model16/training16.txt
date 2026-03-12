@@ -1,0 +1,109 @@
+Training on cpu...
+Epoch [1/16], Step [0], Loss: 4.1253
+Epoch [1/16], Step [1000], Loss: 0.5801
+Epoch [1/16], Step [2000], Loss: 0.5352
+Epoch [1/16], Step [3000], Loss: 0.4390
+Epoch [1/16], Step [4000], Loss: 0.4244
+Epoch [1/16], Step [5000], Loss: 0.3565
+Epoch [2/16], Step [0], Loss: 0.4968
+Epoch [2/16], Step [1000], Loss: 0.3889
+Epoch [2/16], Step [2000], Loss: 0.4205
+Epoch [2/16], Step [3000], Loss: 0.5838
+Epoch [2/16], Step [4000], Loss: 0.4122
+Epoch [2/16], Step [5000], Loss: 0.3230
+Epoch [3/16], Step [0], Loss: 0.4203
+Epoch [3/16], Step [1000], Loss: 0.5603
+Epoch [3/16], Step [2000], Loss: 0.3242
+Epoch [3/16], Step [3000], Loss: 0.3913
+Epoch [3/16], Step [4000], Loss: 0.4045
+Epoch [3/16], Step [5000], Loss: 0.3435
+Epoch [4/16], Step [0], Loss: 0.3380
+Epoch [4/16], Step [1000], Loss: 0.6003
+Epoch [4/16], Step [2000], Loss: 0.3790
+Epoch [4/16], Step [3000], Loss: 0.4310
+Epoch [4/16], Step [4000], Loss: 0.3426
+Epoch [4/16], Step [5000], Loss: 0.3581
+Epoch [5/16], Step [0], Loss: 0.4326
+Epoch [5/16], Step [1000], Loss: 0.5650
+Epoch [5/16], Step [2000], Loss: 0.3347
+Epoch [5/16], Step [3000], Loss: 0.3481
+Epoch [5/16], Step [4000], Loss: 0.2883
+Epoch [5/16], Step [5000], Loss: 0.3367
+Epoch [6/16], Step [0], Loss: 0.4332
+Epoch [6/16], Step [1000], Loss: 0.2688
+Epoch [6/16], Step [2000], Loss: 0.4451
+Epoch [6/16], Step [3000], Loss: 0.4422
+Epoch [6/16], Step [4000], Loss: 0.3691
+Epoch [6/16], Step [5000], Loss: 0.4005
+Epoch [7/16], Step [0], Loss: 0.3311
+Epoch [7/16], Step [1000], Loss: 0.2947
+Epoch [7/16], Step [2000], Loss: 0.3482
+Epoch [7/16], Step [3000], Loss: 0.3644
+Epoch [7/16], Step [4000], Loss: 0.3277
+Epoch [7/16], Step [5000], Loss: 0.2594
+Epoch [8/16], Step [0], Loss: 0.3150
+Epoch [8/16], Step [1000], Loss: 0.3466
+Epoch [8/16], Step [2000], Loss: 0.3176
+Epoch [8/16], Step [3000], Loss: 0.3091
+Epoch [8/16], Step [4000], Loss: 0.2326
+Epoch [8/16], Step [5000], Loss: 0.3292
+Epoch [9/16], Step [0], Loss: 0.4142
+Epoch [9/16], Step [1000], Loss: 0.4551
+Epoch [9/16], Step [2000], Loss: 0.3500
+Epoch [9/16], Step [3000], Loss: 0.3517
+Epoch [9/16], Step [4000], Loss: 0.2973
+Epoch [9/16], Step [5000], Loss: 0.2677
+Epoch [10/16], Step [0], Loss: 0.4040
+Epoch [10/16], Step [1000], Loss: 0.3382
+Epoch [10/16], Step [2000], Loss: 0.2862
+Epoch [10/16], Step [3000], Loss: 0.2096
+Epoch [10/16], Step [4000], Loss: 0.4064
+Epoch [10/16], Step [5000], Loss: 0.3425
+Epoch [11/16], Step [0], Loss: 0.3687
+Epoch [11/16], Step [1000], Loss: 0.3353
+Epoch [11/16], Step [2000], Loss: 0.3341
+Epoch [11/16], Step [3000], Loss: 0.3288
+Epoch [11/16], Step [4000], Loss: 0.3367
+Epoch [11/16], Step [5000], Loss: 0.3737
+Epoch [12/16], Step [0], Loss: 0.3259
+Epoch [12/16], Step [1000], Loss: 0.3313
+Epoch [12/16], Step [2000], Loss: 0.4180
+Epoch [12/16], Step [3000], Loss: 0.2963
+Epoch [12/16], Step [4000], Loss: 0.3344
+Epoch [12/16], Step [5000], Loss: 0.4846
+Epoch [13/16], Step [0], Loss: 0.3578
+Epoch [13/16], Step [1000], Loss: 0.4645
+Epoch [13/16], Step [2000], Loss: 0.3726
+Epoch [13/16], Step [3000], Loss: 0.2880
+Epoch [13/16], Step [4000], Loss: 0.2339
+Epoch [13/16], Step [5000], Loss: 0.3589
+Epoch [14/16], Step [0], Loss: 0.3452
+Epoch [14/16], Step [1000], Loss: 0.3524
+Epoch [14/16], Step [2000], Loss: 0.3592
+Epoch [14/16], Step [3000], Loss: 0.2576
+Epoch [14/16], Step [4000], Loss: 0.4463
+Epoch [14/16], Step [5000], Loss: 0.3895
+Epoch [15/16], Step [0], Loss: 0.3046
+Epoch [15/16], Step [1000], Loss: 0.3989
+Epoch [15/16], Step [2000], Loss: 0.3987
+Epoch [15/16], Step [3000], Loss: 0.3618
+Epoch [15/16], Step [4000], Loss: 0.3067
+Epoch [15/16], Step [5000], Loss: 0.2687
+Epoch [16/16], Step [0], Loss: 0.4366
+Epoch [16/16], Step [1000], Loss: 0.3390
+Epoch [16/16], Step [2000], Loss: 0.3223
+Epoch [16/16], Step [3000], Loss: 0.2697
+Epoch [16/16], Step [4000], Loss: 0.3194
+Epoch [16/16], Step [5000], Loss: 0.3528
+Exporting weights to .bin files...
+Saved conv1_w.bin | Shape: (6, 1, 5, 5), first three floats: [ 0.01031696  0.13554335 -0.04254122]
+Saved conv1_b.bin | Shape: (6,), first three floats: [-0.16899881 -0.08680604 -0.71784455]
+Saved conv2_w.bin | Shape: (16, 6, 5, 5), first three floats: [0.11296939 0.17735612 0.14169668]
+Saved conv2_b.bin | Shape: (16,), first three floats: [-0.2136188  0.3406843  0.1444167]
+Saved fc1_w.bin | Shape: (120, 400), first three floats: [-0.2725998  -0.25597617  0.00150908]
+Saved fc1_b.bin | Shape: (120,), first three floats: [-0.31773207 -0.03897223 -0.06443125]
+Saved fc2_w.bin | Shape: (84, 120), first three floats: [-0.7480326   0.27422115  0.03839715]
+Saved fc2_b.bin | Shape: (84,), first three floats: [ 0.1998974  -0.24559967  0.35528815]
+Saved fc3_w.bin | Shape: (62, 84), first three floats: [-0.36397788 -1.7155466   0.15507808]
+Saved fc3_b.bin | Shape: (62,), first three floats: [ 0.35060686  0.5281503  -0.09334549]
+All weights exported. 

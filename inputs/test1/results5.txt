@@ -1,0 +1,333 @@
+Input Directory:../../inputs/test1/
+Model Path:../../model/model5
+Iput File Names:
+pl.jpeg, L.jpeg, D.jpeg, xl.jpeg, T.jpeg, hl.jpeg, 4.jpeg, tl.jpeg, dl.jpeg, P.jpeg, 0.jpeg, H.jpeg, ll.jpeg, X.jpeg, 8.jpeg, rl.jpeg, bl.jpeg, N.jpeg, F.jpeg, zl.jpeg, 
+6.jpeg, jl.jpeg, V.jpeg, B.jpeg, vl.jpeg, fl.jpeg, 2.jpeg, R.jpeg, J.jpeg, nl.jpeg, Z.jpeg, ql.jpeg, M.jpeg, al.jpeg, yl.jpeg, 5.jpeg, U.jpeg, E.jpeg, il.jpeg, 1.jpeg, 
+ul.jpeg, Q.jpeg, A.jpeg, el.jpeg, 9.jpeg, Y.jpeg, I.jpeg, ml.jpeg, O.jpeg, sl.jpeg, cl.jpeg, W.jpeg, 7.jpeg, kl.jpeg, G.jpeg, wl.jpeg, S.jpeg, 3.jpeg, C.jpeg, gl.jpeg, 
+K.jpeg, ol.jpeg, 
+Loading LeNet-5 weights from ../../model/model5,  ...
+weights conv1_w.bin, first three floats: 0.00490747, 0.0746326, 0.0723769
+weights conv1_b.bin, first three floats: -0.17721, -0.208576, -0.229912
+weights conv2_w.bin, first three floats: -0.00594256, -0.0503845, 0.0191907
+weights conv2_b.bin, first three floats: -0.0403193, 0.0649703, -0.0625682
+weights fc1_w.bin, first three floats: 0.263835, 0.0845977, -0.0844397
+weights fc1_b.bin, first three floats: 0.178234, -0.0167433, 0.0322083
+weights fc2_w.bin, first three floats: 0.179977, 0.0109267, 0.0419961
+weights fc2_b.bin, first three floats: 0.0729555, 0.0356587, 0.151252
+weights fc3_w.bin, first three floats: 0.000300984, 0.00334969, -0.0942835
+weights fc3_b.bin, first three floats: 0.116373, 0.181654, -0.0469246
+LeNet5 model loaded
+Top 1: Class 37 -- map to b with Logit 2.50466
+Top 2: Class 6 -- map to 6 with Logit 1.40351
+Top 3: Class 0 -- map to 0 with Logit -0.039076
+[1;31mImage: ../../inputs/test1/pl.jpeg -> incorrectly predicted: b , Confidence: 0.641878[0m
+
+Top 1: Class 21 -- map to L with Logit 2.37113
+Top 2: Class 55 -- map to t with Logit 0.91851
+Top 3: Class 47 -- map to l with Logit 0.785595
+[1;32mImage: ../../inputs/test1/L.jpeg -> correctly predicted: L , Confidence: 0.596817[0m
+
+Top 1: Class 24 -- map to O with Logit 2.18334
+Top 2: Class 13 -- map to D with Logit 1.79599
+Top 3: Class 0 -- map to 0 with Logit 1.2897
+[1;31mImage: ../../inputs/test1/D.jpeg -> incorrectly predicted: O , Confidence: 0.421699[0m
+
+Top 1: Class 59 -- map to x with Logit 3.69654
+Top 2: Class 33 -- map to X with Logit 2.64116
+Top 3: Class 46 -- map to k with Logit 1.91928
+[1;32mImage: ../../inputs/test1/xl.jpeg -> correctly predicted: x , Confidence: 0.618973[0m
+
+Top 1: Class 29 -- map to T with Logit 0.725798
+Top 2: Class 44 -- map to i with Logit 0.191516
+Top 3: Class 19 -- map to J with Logit 0.0902233
+[1;32mImage: ../../inputs/test1/T.jpeg -> correctly predicted: T , Confidence: 0.243063[0m
+
+Top 1: Class 43 -- map to h with Logit 0.859499
+Top 2: Class 49 -- map to n with Logit -1.11365
+Top 3: Class 58 -- map to w with Logit -1.12422
+[1;32mImage: ../../inputs/test1/hl.jpeg -> correctly predicted: h , Confidence: 0.614063[0m
+
+Top 1: Class 4 -- map to 4 with Logit 3.65469
+Top 2: Class 10 -- map to A with Logit 1.63912
+Top 3: Class 17 -- map to H with Logit 1.40467
+[1;32mImage: ../../inputs/test1/4.jpeg -> correctly predicted: 4 , Confidence: 0.76705[0m
+
+Top 1: Class 55 -- map to t with Logit 1.77578
+Top 2: Class 18 -- map to I with Logit 0.875661
+Top 3: Class 47 -- map to l with Logit -0.715623
+[1;32mImage: ../../inputs/test1/tl.jpeg -> correctly predicted: t , Confidence: 0.579249[0m
+
+Top 1: Class 39 -- map to d with Logit 1.31903
+Top 2: Class 24 -- map to O with Logit 0.382684
+Top 3: Class 4 -- map to 4 with Logit -1.03322
+[1;32mImage: ../../inputs/test1/dl.jpeg -> correctly predicted: d , Confidence: 0.536862[0m
+
+Top 1: Class 51 -- map to p with Logit 2.1914
+Top 2: Class 25 -- map to P with Logit 1.7114
+Top 3: Class 53 -- map to r with Logit 0.900602
+[1;31mImage: ../../inputs/test1/P.jpeg -> incorrectly predicted: p , Confidence: 0.435444[0m
+
+Top 1: Class 24 -- map to O with Logit 5.06672
+Top 2: Class 0 -- map to 0 with Logit 4.51983
+Top 3: Class 50 -- map to o with Logit 1.90431
+[1;31mImage: ../../inputs/test1/0.jpeg -> incorrectly predicted: O , Confidence: 0.614065[0m
+
+Top 1: Class 17 -- map to H with Logit 4.79786
+Top 2: Class 22 -- map to M with Logit 1.10105
+Top 3: Class 43 -- map to h with Logit 1.0941
+[1;32mImage: ../../inputs/test1/H.jpeg -> correctly predicted: H , Confidence: 0.920879[0m
+
+Top 1: Class 47 -- map to l with Logit 3.22216
+Top 2: Class 18 -- map to I with Logit 3.18725
+Top 3: Class 1 -- map to 1 with Logit 2.56964
+[1;32mImage: ../../inputs/test1/ll.jpeg -> correctly predicted: l , Confidence: 0.388016[0m
+
+Top 1: Class 59 -- map to x with Logit 7.26673
+Top 2: Class 33 -- map to X with Logit 5.53532
+Top 3: Class 34 -- map to Y with Logit -1.56719
+[1;31mImage: ../../inputs/test1/X.jpeg -> incorrectly predicted: x , Confidence: 0.848903[0m
+
+Top 1: Class 24 -- map to O with Logit 1.57339
+Top 2: Class 0 -- map to 0 with Logit 0.934552
+Top 3: Class 28 -- map to S with Logit 0.807323
+[1;31mImage: ../../inputs/test1/8.jpeg -> incorrectly predicted: O , Confidence: 0.333424[0m
+
+Top 1: Class 53 -- map to r with Logit 0.921804
+Top 2: Class 55 -- map to t with Logit -0.103775
+Top 3: Class 18 -- map to I with Logit -0.618159
+[1;32mImage: ../../inputs/test1/rl.jpeg -> correctly predicted: r , Confidence: 0.416515[0m
+
+Top 1: Class 37 -- map to b with Logit 2.73544
+Top 2: Class 6 -- map to 6 with Logit 0.894789
+Top 3: Class 24 -- map to O with Logit -1.28385
+[1;32mImage: ../../inputs/test1/bl.jpeg -> correctly predicted: b , Confidence: 0.818223[0m
+
+Top 1: Class 23 -- map to N with Logit 3.44249
+Top 2: Class 49 -- map to n with Logit 1.82031
+Top 3: Class 32 -- map to W with Logit -0.372032
+[1;32mImage: ../../inputs/test1/N.jpeg -> correctly predicted: N , Confidence: 0.783673[0m
+
+Top 1: Class 15 -- map to F with Logit 2.12049
+Top 2: Class 40 -- map to e with Logit 0.627528
+Top 3: Class 41 -- map to f with Logit 0.43503
+[1;32mImage: ../../inputs/test1/F.jpeg -> correctly predicted: F , Confidence: 0.533281[0m
+
+Top 1: Class 61 -- map to z with Logit 1.18218
+Top 2: Class 18 -- map to I with Logit 0.848716
+Top 3: Class 2 -- map to 2 with Logit 0.805403
+[1;32mImage: ../../inputs/test1/zl.jpeg -> correctly predicted: z , Confidence: 0.31695[0m
+
+Top 1: Class 6 -- map to 6 with Logit 1.98821
+Top 2: Class 5 -- map to 5 with Logit 0.75092
+Top 3: Class 24 -- map to O with Logit 0.557211
+[1;32mImage: ../../inputs/test1/6.jpeg -> correctly predicted: 6 , Confidence: 0.494184[0m
+
+Top 1: Class 47 -- map to l with Logit 1.50303
+Top 2: Class 1 -- map to 1 with Logit 1.36525
+Top 3: Class 18 -- map to I with Logit 0.905658
+[1;31mImage: ../../inputs/test1/jl.jpeg -> incorrectly predicted: l , Confidence: 0.286125[0m
+
+Top 1: Class 31 -- map to V with Logit 3.73945
+Top 2: Class 57 -- map to v with Logit 3.36772
+Top 3: Class 30 -- map to U with Logit -0.398448
+[1;32mImage: ../../inputs/test1/V.jpeg -> correctly predicted: V , Confidence: 0.558664[0m
+
+Top 1: Class 11 -- map to B with Logit 3.59074
+Top 2: Class 13 -- map to D with Logit 2.27093
+Top 3: Class 24 -- map to O with Logit 2.00055
+[1;32mImage: ../../inputs/test1/B.jpeg -> correctly predicted: B , Confidence: 0.518525[0m
+
+Top 1: Class 31 -- map to V with Logit 1.91924
+Top 2: Class 57 -- map to v with Logit 1.13471
+Top 3: Class 18 -- map to I with Logit -0.326428
+[1;31mImage: ../../inputs/test1/vl.jpeg -> incorrectly predicted: V , Confidence: 0.502807[0m
+
+Top 1: Class 15 -- map to F with Logit 1.69749
+Top 2: Class 41 -- map to f with Logit 0.417367
+Top 3: Class 28 -- map to S with Logit -0.00981873
+[1;31mImage: ../../inputs/test1/fl.jpeg -> incorrectly predicted: F , Confidence: 0.388921[0m
+
+Top 1: Class 2 -- map to 2 with Logit 3.87821
+Top 2: Class 61 -- map to z with Logit 1.84824
+Top 3: Class 36 -- map to a with Logit 1.55479
+[1;32mImage: ../../inputs/test1/2.jpeg -> correctly predicted: 2 , Confidence: 0.777277[0m
+
+Top 1: Class 10 -- map to A with Logit 2.26027
+Top 2: Class 27 -- map to R with Logit 0.611327
+Top 3: Class 49 -- map to n with Logit 0.131737
+[1;31mImage: ../../inputs/test1/R.jpeg -> incorrectly predicted: A , Confidence: 0.596811[0m
+
+Top 1: Class 45 -- map to j with Logit 0.909034
+Top 2: Class 19 -- map to J with Logit 0.673739
+Top 3: Class 47 -- map to l with Logit 0.621173
+[1;31mImage: ../../inputs/test1/J.jpeg -> incorrectly predicted: j , Confidence: 0.295253[0m
+
+Top 1: Class 49 -- map to n with Logit 0.411609
+Top 2: Class 23 -- map to N with Logit -1.5805
+Top 3: Class 24 -- map to O with Logit -1.98749
+[1;32mImage: ../../inputs/test1/nl.jpeg -> correctly predicted: n , Confidence: 0.579227[0m
+
+Top 1: Class 61 -- map to z with Logit 3.05107
+Top 2: Class 35 -- map to Z with Logit 1.85963
+Top 3: Class 7 -- map to 7 with Logit -0.0350101
+[1;31mImage: ../../inputs/test1/Z.jpeg -> incorrectly predicted: z , Confidence: 0.67906[0m
+
+Top 1: Class 24 -- map to O with Logit 0.802632
+Top 2: Class 39 -- map to d with Logit 0.560443
+Top 3: Class 0 -- map to 0 with Logit -0.174937
+[1;31mImage: ../../inputs/test1/ql.jpeg -> incorrectly predicted: O , Confidence: 0.392851[0m
+
+Top 1: Class 22 -- map to M with Logit 6.07564
+Top 2: Class 48 -- map to m with Logit 4.50414
+Top 3: Class 17 -- map to H with Logit 1.49409
+[1;32mImage: ../../inputs/test1/M.jpeg -> correctly predicted: M , Confidence: 0.812417[0m
+
+Top 1: Class 39 -- map to d with Logit 2.11253
+Top 2: Class 24 -- map to O with Logit 0.353961
+Top 3: Class 0 -- map to 0 with Logit -0.0193977
+[1;31mImage: ../../inputs/test1/al.jpeg -> incorrectly predicted: d , Confidence: 0.716239[0m
+
+Top 1: Class 60 -- map to y with Logit 0.81093
+Top 2: Class 45 -- map to j with Logit 0.690176
+Top 3: Class 34 -- map to Y with Logit -0.303318
+[1;32mImage: ../../inputs/test1/yl.jpeg -> correctly predicted: y , Confidence: 0.357861[0m
+
+Top 1: Class 5 -- map to 5 with Logit 3.71933
+Top 2: Class 28 -- map to S with Logit 0.626631
+Top 3: Class 54 -- map to s with Logit -1.4234
+[1;32mImage: ../../inputs/test1/5.jpeg -> correctly predicted: 5 , Confidence: 0.934278[0m
+
+Top 1: Class 30 -- map to U with Logit 4.30237
+Top 2: Class 56 -- map to u with Logit 2.03754
+Top 3: Class 31 -- map to V with Logit -0.24304
+[1;32mImage: ../../inputs/test1/U.jpeg -> correctly predicted: U , Confidence: 0.876783[0m
+
+Top 1: Class 14 -- map to E with Logit 9.65109
+Top 2: Class 40 -- map to e with Logit 4.67953
+Top 3: Class 15 -- map to F with Logit 1.94368
+[1;32mImage: ../../inputs/test1/E.jpeg -> correctly predicted: E , Confidence: 0.992339[0m
+
+Top 1: Class 18 -- map to I with Logit 2.13774
+Top 2: Class 47 -- map to l with Logit 1.76093
+Top 3: Class 44 -- map to i with Logit 1.60347
+[1;31mImage: ../../inputs/test1/il.jpeg -> incorrectly predicted: I , Confidence: 0.351028[0m
+
+Top 1: Class 18 -- map to I with Logit 2.56994
+Top 2: Class 1 -- map to 1 with Logit 2.24257
+Top 3: Class 47 -- map to l with Logit 2.0425
+[1;31mImage: ../../inputs/test1/1.jpeg -> incorrectly predicted: I , Confidence: 0.321141[0m
+
+Top 1: Class 30 -- map to U with Logit 2.57106
+Top 2: Class 56 -- map to u with Logit 1.35727
+Top 3: Class 31 -- map to V with Logit 0.197957
+[1;31mImage: ../../inputs/test1/ul.jpeg -> incorrectly predicted: U , Confidence: 0.570487[0m
+
+Top 1: Class 24 -- map to O with Logit 2.86225
+Top 2: Class 0 -- map to 0 with Logit 1.38623
+Top 3: Class 50 -- map to o with Logit 1.1466
+[1;31mImage: ../../inputs/test1/Q.jpeg -> incorrectly predicted: O , Confidence: 0.646536[0m
+
+Top 1: Class 10 -- map to A with Logit 3.17662
+Top 2: Class 17 -- map to H with Logit 2.13714
+Top 3: Class 4 -- map to 4 with Logit 1.21598
+[1;32mImage: ../../inputs/test1/A.jpeg -> correctly predicted: A , Confidence: 0.613553[0m
+
+Top 1: Class 6 -- map to 6 with Logit 1.73001
+Top 2: Class 24 -- map to O with Logit 1.64587
+Top 3: Class 0 -- map to 0 with Logit 0.189086
+[1;31mImage: ../../inputs/test1/el.jpeg -> incorrectly predicted: 6 , Confidence: 0.427325[0m
+
+Top 1: Class 9 -- map to 9 with Logit 3.43015
+Top 2: Class 42 -- map to g with Logit 2.32684
+Top 3: Class 28 -- map to S with Logit 1.64592
+[1;32mImage: ../../inputs/test1/9.jpeg -> correctly predicted: 9 , Confidence: 0.546601[0m
+
+Top 1: Class 34 -- map to Y with Logit 3.16926
+Top 2: Class 31 -- map to V with Logit 2.0492
+Top 3: Class 60 -- map to y with Logit 1.81076
+[1;32mImage: ../../inputs/test1/Y.jpeg -> correctly predicted: Y , Confidence: 0.542367[0m
+
+Top 1: Class 47 -- map to l with Logit 2.94096
+Top 2: Class 18 -- map to I with Logit 2.84814
+Top 3: Class 1 -- map to 1 with Logit 2.13184
+[1;31mImage: ../../inputs/test1/I.jpeg -> incorrectly predicted: l , Confidence: 0.402102[0m
+
+Top 1: Class 22 -- map to M with Logit 7.90735
+Top 2: Class 48 -- map to m with Logit 7.12029
+Top 3: Class 43 -- map to h with Logit -0.308118
+[1;31mImage: ../../inputs/test1/ml.jpeg -> incorrectly predicted: M , Confidence: 0.6869[0m
+
+Top 1: Class 24 -- map to O with Logit 5.68522
+Top 2: Class 0 -- map to 0 with Logit 4.77072
+Top 3: Class 50 -- map to o with Logit 2.29918
+[1;32mImage: ../../inputs/test1/O.jpeg -> correctly predicted: O , Confidence: 0.695279[0m
+
+Top 1: Class 28 -- map to S with Logit 1.63429
+Top 2: Class 54 -- map to s with Logit -0.276106
+Top 3: Class 6 -- map to 6 with Logit -0.436215
+[1;31mImage: ../../inputs/test1/sl.jpeg -> incorrectly predicted: S , Confidence: 0.549487[0m
+
+Top 1: Class 12 -- map to C with Logit 1.74146
+Top 2: Class 6 -- map to 6 with Logit 0.620614
+Top 3: Class 14 -- map to E with Logit -0.0901514
+[1;31mImage: ../../inputs/test1/cl.jpeg -> incorrectly predicted: C , Confidence: 0.546766[0m
+
+Top 1: Class 58 -- map to w with Logit 4.28784
+Top 2: Class 32 -- map to W with Logit 3.94651
+Top 3: Class 30 -- map to U with Logit 1.89583
+[1;31mImage: ../../inputs/test1/W.jpeg -> incorrectly predicted: w , Confidence: 0.525961[0m
+
+Top 1: Class 7 -- map to 7 with Logit 1.2467
+Top 2: Class 44 -- map to i with Logit 0.33306
+Top 3: Class 47 -- map to l with Logit -0.631209
+[1;32mImage: ../../inputs/test1/7.jpeg -> correctly predicted: 7 , Confidence: 0.453644[0m
+
+Top 1: Class 46 -- map to k with Logit 7.3709
+Top 2: Class 20 -- map to K with Logit 3.96366
+Top 3: Class 53 -- map to r with Logit 1.10071
+[1;32mImage: ../../inputs/test1/kl.jpeg -> correctly predicted: k , Confidence: 0.965826[0m
+
+Top 1: Class 24 -- map to O with Logit 1.55214
+Top 2: Class 0 -- map to 0 with Logit 0.700454
+Top 3: Class 28 -- map to S with Logit 0.528374
+[1;31mImage: ../../inputs/test1/G.jpeg -> incorrectly predicted: O , Confidence: 0.441831[0m
+
+Top 1: Class 58 -- map to w with Logit 5.04323
+Top 2: Class 32 -- map to W with Logit 4.36285
+Top 3: Class 49 -- map to n with Logit 1.21824
+[1;32mImage: ../../inputs/test1/wl.jpeg -> correctly predicted: w , Confidence: 0.651587[0m
+
+Top 1: Class 28 -- map to S with Logit 5.08152
+Top 2: Class 54 -- map to s with Logit 2.93567
+Top 3: Class 5 -- map to 5 with Logit 2.8266
+[1;32mImage: ../../inputs/test1/S.jpeg -> correctly predicted: S , Confidence: 0.812833[0m
+
+Top 1: Class 3 -- map to 3 with Logit 7.15116
+Top 2: Class 11 -- map to B with Logit 0.622115
+Top 3: Class 28 -- map to S with Logit 0.0642286
+[1;32mImage: ../../inputs/test1/3.jpeg -> correctly predicted: 3 , Confidence: 0.994979[0m
+
+Top 1: Class 12 -- map to C with Logit 4.98603
+Top 2: Class 38 -- map to c with Logit 1.92231
+Top 3: Class 28 -- map to S with Logit 0.52306
+[1;32mImage: ../../inputs/test1/C.jpeg -> correctly predicted: C , Confidence: 0.926257[0m
+
+Top 1: Class 28 -- map to S with Logit 1.40154
+Top 2: Class 0 -- map to 0 with Logit 0.204817
+Top 3: Class 24 -- map to O with Logit 0.00385826
+[1;31mImage: ../../inputs/test1/gl.jpeg -> incorrectly predicted: S , Confidence: 0.463991[0m
+
+Top 1: Class 46 -- map to k with Logit 5.02498
+Top 2: Class 20 -- map to K with Logit 3.66417
+Top 3: Class 59 -- map to x with Logit 1.66803
+[1;31mImage: ../../inputs/test1/K.jpeg -> incorrectly predicted: k , Confidence: 0.755291[0m
+
+Top 1: Class 24 -- map to O with Logit 4.47241
+Top 2: Class 0 -- map to 0 with Logit 3.45333
+Top 3: Class 50 -- map to o with Logit 0.640934
+[1;31mImage: ../../inputs/test1/ol.jpeg -> incorrectly predicted: O , Confidence: 0.717236[0m
+
+[1;32mTotal 62 images, 34 predictions correct
+Accuracy rate: 0.548387
+[0mProcessing complete. 
+LeNet-5 Resources Cleaned Up.
