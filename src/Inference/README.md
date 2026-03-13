@@ -21,7 +21,7 @@ Type the following command in a terminal:
 make
 ```
 
-### run
+### Run
 
 Type the following command in a terminal:
 
