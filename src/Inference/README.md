@@ -7,7 +7,7 @@ This directory contains the C++ code used to run evaluation on the trained model
 - `bias_relu_kernel.h`: Header file for CUDA kernels.  
 - `bias_relu_kernel.cu`: CUDA kernel implementations.  
 - `imgPP.h`: Header file for image pre-processing before passing images to `LeNet5` for evaluation.  
-- `imgPP.cpp`: Reads `.jpeg` / `.jpg` files and preprocesses the images. It uses the **CUDA NPP** library.  
+- `imgPP.cpp`: Reads `.jpeg` / `.jpg` files and preprocesses the images. It uses the **CUDA NPP** library. Preprocessing steps include converting images from color to grayscale, scaling images to 28×28, and then normalizing them to better align with the training images.
 - `ocr.cpp`: Handles command-line options, calls image preprocessing, then calls `LeNet5::forward`. Processes the output from `LeNet5` and prints the results to standard output.  
 - `cucheck.h`: Macros for checking CUDA, cuDNN, and cuBLAS error codes.
 
