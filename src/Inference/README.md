@@ -19,6 +19,7 @@ Type the following command in a terminal:
 
 ```bash
 make
+```
 
 ### run
 
@@ -26,6 +27,7 @@ Type the following command in a terminal:
 
 ```bash
 ./ocr.exe [-relaxed] [-inputD <input_directory>] [-modelD <model_directory>] [-batchSize <batch_size>] [-files file1.jpg,file2.jpg,...]
+```
 
 #### Defaults
 
