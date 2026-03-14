@@ -5,9 +5,11 @@ import torchvision
 import torchvision.transforms as transforms
 from torch.utils.data import DataLoader
 import numpy as np
+import time
 
 data_path = '../../data'  
 model_path = '../../model/'
+force_cpu = False  # Set to True to force CPU usage (for testing without GPU)
 TOTAL_EPOCHS = 5
 
 # 1. Define LeNet-5 Architecture 
@@ -53,7 +55,21 @@ train_set = torchvision.datasets.EMNIST(root=data_path, split='byclass', train=T
 train_loader = DataLoader(train_set, batch_size=128, shuffle=True)
 
 # 3. Training Loop (Run for 5-10 epochs)
-device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+
+if force_cpu:
+    device = torch.device("cpu")
+    print("Forcing CPU usage for testing...")  
+elif torch.cuda.is_available():
+    device = torch.device("cuda")
+elif torch.backends.mps.is_available():
+    device = torch.device("mps")
+    print("Apple Silicon GPU acceleration is active!")
+else:
+    device = torch.device("cpu")
+ 
+
+start_time = time.perf_counter()
+
 model = LeNet5().to(device)
 criterion = nn.CrossEntropyLoss()
 optimizer = optim.Adam(model.parameters(), lr=0.001)
@@ -95,3 +111,6 @@ save_bin(model.fc3.weight, "fc3_w")
 save_bin(model.fc3.bias, "fc3_b")
 
 print("All weights exported. ")
+
+end_time = time.perf_counter()
+print(f"for {TOTAL_EPOCHS} epochs, Total execution time: {end_time - start_time:.2f} seconds")
