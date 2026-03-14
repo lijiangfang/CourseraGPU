@@ -1,4 +1,4 @@
-This directory contains the Python code used to train the model. The training code should work on both GPU and CPU. However, in the Coursera lab environment for this class, PyTorch is not installed. Therefore, the training was performed on the CPU of my MacBook.
+This directory contains the Python code used to train the model. The training code should work on both GPU and CPU. However, in the Coursera lab environment for this class, PyTorch is not installed. Therefore, the training was performed on the CPU of my MacBook. Later, Apple Silicon GPU acceleration (MPS) support was added.  
 
 Modify the following variables as needed:
 
